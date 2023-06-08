@@ -40,8 +40,8 @@ We can define themes in the tailwind config, and those styles will becomes avail
 
 For creating themes in tailwind, we can utilize [tw-colors](https://github.com/L-Blondy/tw-colors) to create different theme names, and give each a group of colors to include. The library will then generate the classes and css variables for us.
 
-- config: [tailwind.config.js]()
-- generated css: [dist/index.css]()
+- config: [tailwind.config.js](https://github.com/ikusner13/tailwind-component-library/blob/main/packages/library/tailwind.config.ts)
+- generated css: [dist/index.css](https://github.com/ikusner13/tailwind-component-library/blob/793e9fda36e185373b7f8c80143c252f3681bacc/packages/library/dist/index.css#L544)
 
 If we want theme to expand beyond colors, we can use [tailwindcss-themer](https://github.com/RyanClementsHax/tailwindcss-themer) to create styles beyond colors in each theme
 
