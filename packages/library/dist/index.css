@@ -1,0 +1,709 @@
+/*
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-11 {
+  height: 2.75rem;
+}
+.h-9 {
+  height: 2.25rem;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.bg-brand-primary-500 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--efui-brand-primary-500) / var(--efui-brand-primary-500-opacity, var(--tw-bg-opacity)));
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.font-medium {
+  font-weight: 500;
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-foundations-base-black {
+  --tw-text-opacity: 1;
+  color: hsl(var(--efui-foundations-base-black) / var(--efui-foundations-base-black-opacity, var(--tw-text-opacity)));
+}
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.theme-erena-light,[data-theme="erena-light"] {
+  --efui-brand-primary-50: 214.60000000000002 100% 94.9%;
+  --efui-brand-primary-100: 213.89999999999998 100% 91%;
+  --efui-brand-primary-200: 213.89999999999998 100% 80.6%;
+  --efui-brand-primary-300: 214 100% 70.6%;
+  --efui-brand-primary-400: 214 100% 62%;
+  --efui-brand-primary-500: 214.10000000000002 100% 49%;
+  --efui-brand-primary-600: 213.89999999999998 100% 41%;
+  --efui-brand-primary-700: 214 100% 34.9%;
+  --efui-brand-primary-800: 214 100% 28%;
+  --efui-brand-primary-900: 213.79999999999995 100% 21.6%;
+  --efui-brand-primary-950: 214.39999999999998 100% 16.1%;
+  --efui-foundations-base-white: 0 0% 100%;
+  --efui-foundations-base-black: 0 0% 0%;
+  --efui-foundations-neutral-25: 0 0% 100%;
+  --efui-foundations-neutral-50: 0 0% 98.8%;
+  --efui-foundations-neutral-100: 0 0% 98%;
+  --efui-foundations-neutral-200: 220 14.3% 95.9%;
+  --efui-foundations-neutral-300: 228 12.2% 92%;
+  --efui-foundations-neutral-400: 220 14.8% 88%;
+  --efui-foundations-neutral-500: 216 5.2% 62%;
+  --efui-foundations-neutral-600: 216 4.2% 46.3%;
+  --efui-foundations-neutral-700: 217.5 4.5% 34.5%;
+  --efui-foundations-neutral-800: 216 3.7% 26.5%;
+  --efui-foundations-neutral-900: 210 11.1% 7.1%;
+  --efui-foundations-accessibility-positive-25: 144 100% 98%;
+  --efui-foundations-accessibility-positive-50: 145.39999999999998 100% 94.9%;
+  --efui-foundations-accessibility-positive-500: 110 74.3% 41.2%;
+  --efui-foundations-accessibility-positive-600: 110.10000000000002 73.4% 33.9%;
+  --efui-foundations-accessibility-positive-700: 110.10000000000002 74.1% 28.8%;
+  --efui-foundations-accessibility-caution-25: 36 100% 98%;
+  --efui-foundations-accessibility-caution-50: 39 100% 96.1%;
+  --efui-foundations-accessibility-caution-500: 37.10000000000002 94.6% 56.1%;
+  --efui-foundations-accessibility-caution-600: 32.89999999999998 85.1% 47.5%;
+  --efui-foundations-accessibility-caution-700: 29.80000000000001 84.9% 39%;
+  --efui-foundations-accessibility-negative-25: 0 100% 99%;
+  --efui-foundations-accessibility-negative-50: 6.699999999999989 100% 96.5%;
+  --efui-foundations-accessibility-negative-500: 3.8999999999999773 86% 58%;
+  --efui-foundations-accessibility-negative-600: 3.8999999999999773 67.6% 50.4%;
+  --efui-foundations-accessibility-negative-700: 3.8000000000000114 66.4% 42%;
+}
+.theme-erena-dark,[data-theme="erena-dark"] {
+  --efui-brand-primary-50: 214.39999999999998 85% 15.7%;
+  --efui-brand-primary-100: 214 86.5% 20.4%;
+  --efui-brand-primary-200: 213.79999999999995 81% 31%;
+  --efui-brand-primary-300: 214.10000000000002 79.3% 37.8%;
+  --efui-brand-primary-400: 214 78.9% 44.7%;
+  --efui-brand-primary-500: 214.20000000000005 96.2% 59.2%;
+  --efui-brand-primary-600: 213.79999999999995 94% 67.1%;
+  --efui-brand-primary-700: 214.20000000000005 92.9% 72.5%;
+  --efui-brand-primary-800: 213.89999999999998 91.5% 76.9%;
+  --efui-brand-primary-900: 214 89.2% 81.8%;
+  --efui-brand-primary-950: 213.79999999999995 84.6% 87.3%;
+  --efui-foundations-base-white: 0 0% 100%;
+  --efui-foundations-base-black: 0 0% 0%;
+  --efui-foundations-neutral-25: 0 0% 7.1%;
+  --efui-foundations-neutral-50: 0 0% 11.8%;
+  --efui-foundations-neutral-100: 0 0% 13.7%;
+  --efui-foundations-neutral-200: 0 0% 15.3%;
+  --efui-foundations-neutral-300: 0 0% 17.3%;
+  --efui-foundations-neutral-400: 0 0% 20%;
+  --efui-foundations-neutral-500: 0 0% 42.4%;
+  --efui-foundations-neutral-600: 0 0% 62.7%;
+  --efui-foundations-neutral-700: 0 0% 74.1%;
+  --efui-foundations-neutral-800: 0 0% 79.6%;
+  --efui-foundations-neutral-900: 0 0% 87.8%;
+  --efui-foundations-accessibility-positive-25: 151.60000000000002 46.3% 8%;
+  --efui-foundations-accessibility-positive-50: 152 65.2% 9%;
+  --efui-foundations-accessibility-positive-500: 148.10000000000002 64.1% 42.5%;
+  --efui-foundations-accessibility-positive-600: 140.2 49.7% 64.9%;
+  --efui-foundations-accessibility-positive-700: 140.60000000000002 59.3% 76.9%;
+  --efui-foundations-accessibility-caution-25: 67.19999999999999 67.6% 7.3%;
+  --efui-foundations-accessibility-caution-50: 53.5 67.3% 10.8%;
+  --efui-foundations-accessibility-caution-500: 47.89999999999998 100% 59%;
+  --efui-foundations-accessibility-caution-600: 48 100% 74.5%;
+  --efui-foundations-accessibility-caution-700: 52 100% 79.4%;
+  --efui-foundations-accessibility-negative-25: 354.29999999999995 38.2% 10.8%;
+  --efui-foundations-accessibility-negative-50: 353.79999999999995 39.7% 14.3%;
+  --efui-foundations-accessibility-negative-500: 355.1 86% 58%;
+  --efui-foundations-accessibility-negative-600: 0 82.8% 65.9%;
+  --efui-foundations-accessibility-negative-700: 0 79.3% 71.6%;
+}
+.theme-sidekick-light,[data-theme="sidekick-light"] {
+  --efui-brand-primary-50: 261 76.9% 94.9%;
+  --efui-brand-primary-100: 260 78.9% 88.8%;
+  --efui-brand-primary-200: 259.79999999999995 64.9% 69.8%;
+  --efui-brand-primary-300: 260 71% 63.5%;
+  --efui-brand-primary-400: 264 74.2% 59%;
+  --efui-brand-primary-500: 270 100% 44.7%;
+  --efui-brand-primary-600: 270.29999999999995 100% 38%;
+  --efui-brand-primary-700: 269.79999999999995 100% 32%;
+  --efui-brand-primary-800: 269.79999999999995 100% 26.1%;
+  --efui-brand-primary-900: 269.1 94.3% 20.6%;
+  --efui-brand-primary-950: 269.1 94.1% 13.3%;
+  --efui-foundations-base-white: 0 0% 100%;
+  --efui-foundations-base-black: 0 0% 0%;
+  --efui-foundations-neutral-25: 0 0% 100%;
+  --efui-foundations-neutral-50: 0 0% 98.8%;
+  --efui-foundations-neutral-100: 0 0% 98%;
+  --efui-foundations-neutral-200: 220 14.3% 95.9%;
+  --efui-foundations-neutral-300: 228 12.2% 92%;
+  --efui-foundations-neutral-400: 220 14.8% 88%;
+  --efui-foundations-neutral-500: 216 5.2% 62%;
+  --efui-foundations-neutral-600: 216 4.2% 46.3%;
+  --efui-foundations-neutral-700: 217.5 4.5% 34.5%;
+  --efui-foundations-neutral-800: 216 3.7% 26.5%;
+  --efui-foundations-neutral-900: 210 11.1% 7.1%;
+  --efui-foundations-accessibility-positive-25: 144 100% 98%;
+  --efui-foundations-accessibility-positive-50: 145.39999999999998 100% 94.9%;
+  --efui-foundations-accessibility-positive-500: 110 74.3% 41.2%;
+  --efui-foundations-accessibility-positive-600: 110.10000000000002 73.4% 33.9%;
+  --efui-foundations-accessibility-positive-700: 110.10000000000002 74.1% 28.8%;
+  --efui-foundations-accessibility-caution-25: 36 100% 98%;
+  --efui-foundations-accessibility-caution-50: 39 100% 96.1%;
+  --efui-foundations-accessibility-caution-500: 37.10000000000002 94.6% 56.1%;
+  --efui-foundations-accessibility-caution-600: 32.89999999999998 85.1% 47.5%;
+  --efui-foundations-accessibility-caution-700: 29.80000000000001 84.9% 39%;
+  --efui-foundations-accessibility-negative-25: 0 100% 99%;
+  --efui-foundations-accessibility-negative-50: 6.699999999999989 100% 96.5%;
+  --efui-foundations-accessibility-negative-500: 3.8999999999999773 86% 58%;
+  --efui-foundations-accessibility-negative-600: 3.8999999999999773 67.6% 50.4%;
+  --efui-foundations-accessibility-negative-700: 3.8000000000000114 66.4% 42%;
+}
+.theme-sidekick-dark,[data-theme="sidekick-dark"] {
+  --efui-brand-primary-50: 259 42.3% 19%;
+  --efui-brand-primary-100: 258.29999999999995 42.4% 27.3%;
+  --efui-brand-primary-200: 257.6 42.3% 39.4%;
+  --efui-brand-primary-300: 257.4 42.4% 46.3%;
+  --efui-brand-primary-400: 257.6 51.5% 54.7%;
+  --efui-brand-primary-500: 258.20000000000005 100% 71%;
+  --efui-brand-primary-600: 258 100% 76.5%;
+  --efui-brand-primary-700: 257.79999999999995 100% 80.2%;
+  --efui-brand-primary-800: 258.29999999999995 100% 83.9%;
+  --efui-brand-primary-900: 257.70000000000005 100% 88%;
+  --efui-brand-primary-950: 258.29999999999995 92% 90.2%;
+  --efui-foundations-base-white: 0 0% 100%;
+  --efui-foundations-base-black: 0 0% 0%;
+  --efui-foundations-neutral-25: 0 0% 7.1%;
+  --efui-foundations-neutral-50: 0 0% 11.8%;
+  --efui-foundations-neutral-100: 0 0% 13.7%;
+  --efui-foundations-neutral-200: 0 0% 15.3%;
+  --efui-foundations-neutral-300: 0 0% 17.3%;
+  --efui-foundations-neutral-400: 0 0% 20%;
+  --efui-foundations-neutral-500: 0 0% 42.4%;
+  --efui-foundations-neutral-600: 0 0% 62.7%;
+  --efui-foundations-neutral-700: 0 0% 74.1%;
+  --efui-foundations-neutral-800: 0 0% 79.6%;
+  --efui-foundations-neutral-900: 0 0% 87.8%;
+  --efui-foundations-accessibility-positive-25: 151.60000000000002 46.3% 8%;
+  --efui-foundations-accessibility-positive-50: 152 65.2% 9%;
+  --efui-foundations-accessibility-positive-500: 148.10000000000002 64.1% 42.5%;
+  --efui-foundations-accessibility-positive-600: 140.2 49.7% 64.9%;
+  --efui-foundations-accessibility-positive-700: 140.60000000000002 59.3% 76.9%;
+  --efui-foundations-accessibility-caution-25: 67.19999999999999 67.6% 7.3%;
+  --efui-foundations-accessibility-caution-50: 53.5 67.3% 10.8%;
+  --efui-foundations-accessibility-caution-500: 47.89999999999998 100% 59%;
+  --efui-foundations-accessibility-caution-600: 48 100% 74.5%;
+  --efui-foundations-accessibility-caution-700: 52 100% 79.4%;
+  --efui-foundations-accessibility-negative-25: 354.29999999999995 38.2% 10.8%;
+  --efui-foundations-accessibility-negative-50: 353.79999999999995 39.7% 14.3%;
+  --efui-foundations-accessibility-negative-500: 355.1 86% 58%;
+  --efui-foundations-accessibility-negative-600: 0 82.8% 65.9%;
+  --efui-foundations-accessibility-negative-700: 0 79.3% 71.6%;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -4,13 +4,7 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "env": [
-        "NEXT_PUBLIC_APP_URL",
-        "UPSTASH_REDIS_REST_URL",
-        "UPSTASH_REDIS_REST_TOKEN",
-        "COMPONENTS_BASE_URL",
-        "npm_config_user_agent"
-      ],
+      "env": ["NEXT_PUBLIC_APP_URL"],
       "outputs": ["dist/**", ".next/**"]
     },
     "preview": {

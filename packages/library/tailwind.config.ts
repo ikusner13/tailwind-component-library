@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss"
+import { createThemes } from "tw-colors"
 
 import { eRenaTheme } from "./src/themes/erenaTheme.js"
 import { foundations } from "./src/themes/foundations.js"
@@ -13,64 +14,44 @@ export default {
     "./src/**/*.tsx",
   ],
   plugins: [
-    require("tailwindcss-themer")({
-      defaultTheme: {
-        extend: {
-          colors: {
-            foundations: {
-              ...foundations.light,
-            },
-            brand: {
-              ...eRenaTheme.Light,
-            },
+    createThemes(
+      {
+        "erena-light": {
+          brand: {
+            ...eRenaTheme.Light,
+          },
+          foundations: {
+            ...foundations.light,
+          },
+        },
+        "erena-dark": {
+          brand: {
+            ...eRenaTheme.Dark,
+          },
+          foundations: {
+            ...foundations.dark,
+          },
+        },
+        "sidekick-light": {
+          brand: {
+            ...SidekickTheme.Light,
+          },
+          foundations: {
+            ...foundations.light,
+          },
+        },
+        "sidekick-dark": {
+          brand: {
+            ...SidekickTheme.Dark,
+          },
+          foundations: {
+            ...foundations.dark,
           },
         },
       },
-      themes: [
-        {
-          name: "erena-dark",
-          selectors: [".erena-dark", '[data-theme="erena-dark"]'],
-          extend: {
-            colors: {
-              foundations: {
-                ...foundations.dark,
-              },
-              brand: {
-                ...eRenaTheme.Dark,
-              },
-            },
-          },
-        },
-        {
-          name: "sidekick-light",
-          selectors: [".sidekick-light", '[data-theme="sidekick-light"]'],
-          extend: {
-            colors: {
-              foundations: {
-                ...foundations.light,
-              },
-              brand: {
-                ...SidekickTheme.Light,
-              },
-            },
-          },
-        },
-        {
-          name: "sidekick-dark",
-          selectors: [".sidekick-dark", '[data-theme="sidekick-dark"]'],
-          extend: {
-            colors: {
-              foundations: {
-                ...foundations.dark,
-              },
-              brand: {
-                ...SidekickTheme.Dark,
-              },
-            },
-          },
-        },
-      ],
-    }),
-    // ...
+      {
+        cssVariablePrefix: "efui-",
+      }
+    ),
   ],
 } satisfies Config
