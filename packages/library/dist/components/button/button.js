@@ -2,12 +2,8 @@ import { jsx } from 'react/jsx-runtime';
 import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva } from 'class-variance-authority';
-import { clsx } from 'clsx';
-import { twMerge } from 'tailwind-merge';
+import { cn } from '../../utils/utils';
 
-function cn(...inputs) {
-  return twMerge(clsx(inputs));
-}
 const buttonVariants = cva(
   "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors",
   {
@@ -43,6 +39,6 @@ const Button = React.forwardRef(
 );
 Button.displayName = "Button";
 
-export { Button, buttonVariants, cn };
+export { Button, buttonVariants };
 //# sourceMappingURL=out.js.map
 //# sourceMappingURL=button.js.map

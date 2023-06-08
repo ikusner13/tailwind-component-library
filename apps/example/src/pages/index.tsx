@@ -1,7 +1,13 @@
 import { Inter } from "next/font/google"
 import Head from "next/head"
 import styled from "styled-components"
-import { Button } from "test-tailwind"
+import {
+  Button,
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "test-tailwind"
 
 import styles from "@/styles/Home.module.css"
 
@@ -21,6 +27,14 @@ export default function Home() {
         <Button variant="destructive">Library Destructive</Button>
         <StyledButton>Styled Component</StyledButton>
         <ThemeButton>theme.brand.primary[300]</ThemeButton>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger>Hover</TooltipTrigger>
+            <TooltipContent>
+              <p>tooltip</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </main>
     </>
   )

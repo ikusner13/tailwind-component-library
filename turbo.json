@@ -1,14 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalEnv": ["NODE_ENV"],
+  "globalEnv": ["NODE_ENV", "ANALYZE"],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "env": ["NEXT_PUBLIC_APP_URL"],
-      "outputs": ["dist/**", ".next/**"]
-    },
-    "preview": {
-      "env": ["NEXT_PUBLIC_APP_URL"],
+      "env": ["NEXT_PUBLIC_APP_URL", "ANALYZE"],
       "outputs": ["dist/**", ".next/**"]
     },
     "start": {

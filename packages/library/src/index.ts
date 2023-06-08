@@ -1,4 +1,3 @@
-export { Button } from "./button/index.js"
+export * from "./components/index.js"
 
-export { eRenaTheme } from "./themes/erenaTheme.js"
-export { foundations } from "./themes/foundations.js"
+export * from "./themes/index.js"

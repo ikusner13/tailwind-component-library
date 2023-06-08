@@ -14,6 +14,7 @@ export default {
     "./src/**/*.tsx",
   ],
   plugins: [
+    require("tailwindcss-animate"),
     createThemes(
       {
         "erena-light": {
