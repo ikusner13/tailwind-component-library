@@ -91,3 +91,4 @@ For FE using styled-components, we'll need to pass a theme object to the provide
 - [class-variance-authority](https://github.com/joe-bell/cva)
 - [shadcn UI](https://ui.shadcn.com/)
 - [Chimera UI](https://www.chimera-ui.com/docs/introduction)
+- [Tailwind Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet)
