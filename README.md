@@ -1,6 +1,6 @@
-# EFUI with tailwindcss
+# EFUI with tailwind
 
-## How can we consume a component library made using tailwindcss in a app not using tailwindcss?
+## How can we consume a component library made using tailwind in a app not using tailwind?
 
 The library will need to work kind of how bootstrap does, where we need to import a css file from the library, and then use it in the root of the app. Our component library styling becomes class based instead of CSS in JS.
 
@@ -12,7 +12,7 @@ import "efui/dist/index.css"
 
 and then now the styles we defined in the library will apply to our components.
 
-No need to install tailwindcss in the app, as we're just consuming the css file that tailwind generates for us.
+No need to install tailwind in the app, as we're just consuming the css file that tailwind generates for us.
 
 Styling can be done through styled-components, or just using the class names that tailwind generates. tw-merge (used in the component library) helps with making these overrides possible
 
