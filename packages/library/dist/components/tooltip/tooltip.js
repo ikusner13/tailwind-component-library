@@ -3,8 +3,11 @@ import * as React from 'react';
 import * as TooltipPrimitive from '@radix-ui/react-tooltip';
 import { cn } from '../../utils/utils';
 
+const Tooltip = (props) => {
+  const { children, ...rest } = props;
+  return /* @__PURE__ */ jsx(TooltipPrimitive.Root, { ...rest, children });
+};
 const TooltipProvider = TooltipPrimitive.Provider;
-const Tooltip = TooltipPrimitive.Root;
 const TooltipTrigger = TooltipPrimitive.Trigger;
 const TooltipContent = React.forwardRef(({ className, sideOffset = 4, ...props }, ref) => /* @__PURE__ */ jsx(
   TooltipPrimitive.Content,
@@ -19,7 +22,9 @@ const TooltipContent = React.forwardRef(({ className, sideOffset = 4, ...props }
   }
 ));
 TooltipContent.displayName = TooltipPrimitive.Content.displayName;
+Tooltip.Trigger = TooltipTrigger;
+Tooltip.Content = TooltipContent;
 
-export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger };
+export { Tooltip, TooltipProvider };
 //# sourceMappingURL=out.js.map
 //# sourceMappingURL=tooltip.js.map
