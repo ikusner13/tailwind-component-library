@@ -1,0 +1,85 @@
+.theme-sidekick-light,
+[data-theme="sidekick-light"] {
+  --efui-brand-primary-50: 261 76.9% 94.9%;
+  --efui-brand-primary-100: 260 78.9% 88.8%;
+  --efui-brand-primary-200: 259.79999999999995 64.9% 69.8%;
+  --efui-brand-primary-300: 260 71% 63.5%;
+  --efui-brand-primary-400: 264 74.2% 59%;
+  --efui-brand-primary-500: 270 100% 44.7%;
+  --efui-brand-primary-600: 270.29999999999995 100% 38%;
+  --efui-brand-primary-700: 269.79999999999995 100% 32%;
+  --efui-brand-primary-800: 269.79999999999995 100% 26.1%;
+  --efui-brand-primary-900: 269.1 94.3% 20.6%;
+  --efui-brand-primary-950: 269.1 94.1% 13.3%;
+  --efui-foundations-base-white: 0 0% 100%;
+  --efui-foundations-base-black: 0 0% 0%;
+  --efui-foundations-neutral-25: 0 0% 100%;
+  --efui-foundations-neutral-50: 0 0% 98.8%;
+  --efui-foundations-neutral-100: 0 0% 98%;
+  --efui-foundations-neutral-200: 220 14.3% 95.9%;
+  --efui-foundations-neutral-300: 228 12.2% 92%;
+  --efui-foundations-neutral-400: 220 14.8% 88%;
+  --efui-foundations-neutral-500: 216 5.2% 62%;
+  --efui-foundations-neutral-600: 216 4.2% 46.3%;
+  --efui-foundations-neutral-700: 217.5 4.5% 34.5%;
+  --efui-foundations-neutral-800: 216 3.7% 26.5%;
+  --efui-foundations-neutral-900: 210 11.1% 7.1%;
+  --efui-foundations-accessibility-positive-25: 144 100% 98%;
+  --efui-foundations-accessibility-positive-50: 145.39999999999998 100% 94.9%;
+  --efui-foundations-accessibility-positive-500: 110 74.3% 41.2%;
+  --efui-foundations-accessibility-positive-600: 110.10000000000002 73.4% 33.9%;
+  --efui-foundations-accessibility-positive-700: 110.10000000000002 74.1% 28.8%;
+  --efui-foundations-accessibility-caution-25: 36 100% 98%;
+  --efui-foundations-accessibility-caution-50: 39 100% 96.1%;
+  --efui-foundations-accessibility-caution-500: 37.10000000000002 94.6% 56.1%;
+  --efui-foundations-accessibility-caution-600: 32.89999999999998 85.1% 47.5%;
+  --efui-foundations-accessibility-caution-700: 29.80000000000001 84.9% 39%;
+  --efui-foundations-accessibility-negative-25: 0 100% 99%;
+  --efui-foundations-accessibility-negative-50: 6.699999999999989 100% 96.5%;
+  --efui-foundations-accessibility-negative-500: 3.8999999999999773 86% 58%;
+  --efui-foundations-accessibility-negative-600: 3.8999999999999773 67.6% 50.4%;
+  --efui-foundations-accessibility-negative-700: 3.8000000000000114 66.4% 42%;
+}
+
+.theme-sidekick-dark,
+[data-theme="sidekick-dark"] {
+  --efui-brand-primary-50: 259 42.3% 19%;
+  --efui-brand-primary-100: 258.29999999999995 42.4% 27.3%;
+  --efui-brand-primary-200: 257.6 42.3% 39.4%;
+  --efui-brand-primary-300: 257.4 42.4% 46.3%;
+  --efui-brand-primary-400: 257.6 51.5% 54.7%;
+  --efui-brand-primary-500: 258.20000000000005 100% 71%;
+  --efui-brand-primary-600: 258 100% 76.5%;
+  --efui-brand-primary-700: 257.79999999999995 100% 80.2%;
+  --efui-brand-primary-800: 258.29999999999995 100% 83.9%;
+  --efui-brand-primary-900: 257.70000000000005 100% 88%;
+  --efui-brand-primary-950: 258.29999999999995 92% 90.2%;
+  --efui-foundations-base-white: 0 0% 100%;
+  --efui-foundations-base-black: 0 0% 0%;
+  --efui-foundations-neutral-25: 0 0% 7.1%;
+  --efui-foundations-neutral-50: 0 0% 11.8%;
+  --efui-foundations-neutral-100: 0 0% 13.7%;
+  --efui-foundations-neutral-200: 0 0% 15.3%;
+  --efui-foundations-neutral-300: 0 0% 17.3%;
+  --efui-foundations-neutral-400: 0 0% 20%;
+  --efui-foundations-neutral-500: 0 0% 42.4%;
+  --efui-foundations-neutral-600: 0 0% 62.7%;
+  --efui-foundations-neutral-700: 0 0% 74.1%;
+  --efui-foundations-neutral-800: 0 0% 79.6%;
+  --efui-foundations-neutral-900: 0 0% 87.8%;
+  --efui-foundations-accessibility-positive-25: 151.60000000000002 46.3% 8%;
+  --efui-foundations-accessibility-positive-50: 152 65.2% 9%;
+  --efui-foundations-accessibility-positive-500: 148.10000000000002 64.1% 42.5%;
+  --efui-foundations-accessibility-positive-600: 140.2 49.7% 64.9%;
+  --efui-foundations-accessibility-positive-700: 140.60000000000002 59.3% 76.9%;
+  --efui-foundations-accessibility-caution-25: 67.19999999999999 67.6% 7.3%;
+  --efui-foundations-accessibility-caution-50: 53.5 67.3% 10.8%;
+  --efui-foundations-accessibility-caution-500: 47.89999999999998 100% 59%;
+  --efui-foundations-accessibility-caution-600: 48 100% 74.5%;
+  --efui-foundations-accessibility-caution-700: 52 100% 79.4%;
+  --efui-foundations-accessibility-negative-25: 354.29999999999995 38.2% 10.8%;
+  --efui-foundations-accessibility-negative-50: 353.79999999999995 39.7% 14.3%;
+  --efui-foundations-accessibility-negative-500: 355.1 86% 58%;
+  --efui-foundations-accessibility-negative-600: 0 82.8% 65.9%;
+  --efui-foundations-accessibility-negative-700: 0 79.3% 71.6%;
+}

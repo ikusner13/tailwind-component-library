@@ -1,5 +1,5 @@
 import "test-tailwind/dist/index.css"
-import "test-tailwind/dist/themes/erena-theme.css"
+import "test-tailwind/dist/themes/sidekick-theme.css"
 import type { AppProps } from "next/app"
 import { ThemeProvider as NextThemeProvider } from "next-themes"
 import {
@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <NextThemeProvider
-        defaultTheme="erena-light"
+        defaultTheme="sidekick-light"
         themes={[
           "erena-light",
           "erena-dark",
