@@ -1,4 +1,5 @@
 import "test-tailwind/dist/index.css"
+import "test-tailwind/dist/themes/erena-theme.css"
 import type { AppProps } from "next/app"
 import { ThemeProvider as NextThemeProvider } from "next-themes"
 import {

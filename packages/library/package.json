@@ -14,7 +14,8 @@
   "module": "dist/index.js",
   "scripts": {
     "build:js": "tsup",
-    "build:css": "postcss src/index.css -o dist/index.css --map",
+    "build:index-css": "postcss src/index.css -o dist/index.css --map",
+    "build:theme": "postcss src/themes/*.css --dir dist/themes --map",
     "build": "run-s build:*"
   },
   "dependencies": {
