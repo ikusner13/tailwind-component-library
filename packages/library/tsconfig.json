@@ -20,6 +20,6 @@
     "module": "ESNext",
     "target": "es6"
   },
-  "include": [".", "../../tailwindThemeObject.ts"],
+  "include": ["."],
   "exclude": ["node_modules", "dist", "build"]
 }

@@ -72,46 +72,5 @@ export default {
     },
   },
 
-  plugins: [
-    require("tailwindcss-animate"),
-    // createThemes(
-    //   {
-    //     "erena-light": {
-    //       brand: {
-    //         ...eRenaTheme.Light,
-    //       },
-    //       foundations: {
-    //         ...foundations.light,
-    //       },
-    //     },
-    //     "erena-dark": {
-    //       brand: {
-    //         ...eRenaTheme.Dark,
-    //       },
-    //       foundations: {
-    //         ...foundations.dark,
-    //       },
-    //     },
-    //     "sidekick-light": {
-    //       brand: {
-    //         ...SidekickTheme.Light,
-    //       },
-    //       foundations: {
-    //         ...foundations.light,
-    //       },
-    //     },
-    //     "sidekick-dark": {
-    //       brand: {
-    //         ...SidekickTheme.Dark,
-    //       },
-    //       foundations: {
-    //         ...foundations.dark,
-    //       },
-    //     },
-    //   },
-    //   {
-    //     cssVariablePrefix: "efui-",
-    //   }
-    // ),
-  ],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config
